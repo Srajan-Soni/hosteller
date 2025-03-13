@@ -62,7 +62,7 @@ const resolvers = {
       console.log(locationId);
       
       await dbConnect();
-      return await Hostels.find(locationId ? { locationId } : {});
+      return await Hostels.find();
     },
     locationHostelCount: async () => {
       await dbConnect();

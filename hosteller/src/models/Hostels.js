@@ -6,5 +6,5 @@ const HostelSchema = new mongoose.Schema({
   locationId: { type: mongoose.Schema.Types.ObjectId, ref: "Location", required: true },
 });
 
-export default mongoose.models.Hostel || mongoose.model("Hostel", HostelSchema);
+export default mongoose.models.Hostels || mongoose.model("Hostels", HostelSchema);
 
